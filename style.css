@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400&family=Lobster&display=swap');
+
+body{
+    background-color: rgb(110, 227, 231);
+    font-family: 'DM Sans', sans-serif;
+}
+
+h1{ /*selettore css per elementi, capita raramente che voglia applicare A TUTTI I TAG NELLA PAGINA*/
+    background-color: tomato; 
+    font-family: 'Lobster', cursive;
+}
+a{
+    background-color: crimson;
+}
+/*selettore css per classi con puntatore, dichiarare classe nel tag come attributo class. Punta solo a tutti gli attributi della classe*/
+.text-content{
+    font-size: xx-large;
+}
+.title-content{
+    font-size: xx-large;
+    font-weight: 400;
+
+}
+.font-grosso{
+    font-size: xx-large;
+}
+.font-normale /*selettore puntatore*/{
+    font-weight: 400;
+}
+#titolo-principale /*selettore id con #*/{
+    color: gold;
+}
+h4,h5{
+    color: green;
+}
+p a{
+    color: white;
+}
+.titolone{
+    width: 50%;
+    height: 500px;
+}
+.mamma{
+    background-color: gold;
+    width: 50%;
+    height: 50%;
+}
+.figlia{
+    width: 50%; /*misure percentuali sempre a riferimento genitore, nonno/nonna, bisnonno (sopra gerarchie)*/
+    /*width: 50vh;*/ /*misure per scavalcare gerarchia e misure basate sul browser*/
+    min-width: 80%;
+    height: 50px;
+    overflow: scroll; /*3 overflow comuni: hidden, auto e scroll. Overflow va sempre pensato se devo forzare dimensioni*/
+    /*margin esterni padding interni*/
+}
+.primo{
+    background-color: aqua;
+    padding: 18px;/*per come funziona padding vedi margin sotto*/
+}
+.secondo{
+    background-color: chartreuse;
+    /*margin: 8px;*/ /*crea margine di 8px attorno, esterno*/
+    /*margin-top: 8px;*/ /*crea margine sopra*/
+    margin: 20px 60px 38px 40px; /*crea margine esterno con diverse dimensioni, tutte le dimensioni vanno in senso orario top right bottom left. Oppure 2 valori, primo = sopra sotto secondo = destra sinistra*/
+}
+.terzo{
+    /*border-style: solid; *//*no border standard, aggiungere solid, dashed, double o dotted come stile.*/ 
+    /*border-color: white;
+    border-width: 20px;*/
+    height: 400px;
+    width: 800px;
+    border: solid 8px white; /* border linea generica di riassunto, syntax = stile, dimensioni, colore*/
+    /* border-radius: 5px; */
+    /*border-top-left-radius: 50px;*/ /*stondare solo un angolo*/
+    border-radius: 50px 200px 2px 500px; /*come margin e padding misure senso orario*/
+    background-image: url("./assets/269d49cc-c323-4fff-b3ef-2e7333b75b07-profile_image-300x300.png"); /*immagine ripetuta*/
+    background-repeat: no-repeat; /*non ripete l'immagine*/
+    background-size:cover; /*auto = default, contain= contiene, cover=riempie la sezione*/
+    background-position: center center; /*posiziona l'immagine al centro, center center per centro verticale e centro orizzontale, center top centrata in cima etc*/
+}
+.quarto{
+    background-color: teal;   
+    display: inline-block;
+    color: beige;
+    width: 300px;
+    height: 300px; /*le dimensioni non funzionano perchè su inline perchè non prende dimensioni, inline-block crea una via di mezzo dimensionabile*/
+}
+.quinto{
+    background-color: violet;
+    display: inline;
+}
